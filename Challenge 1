@@ -1,0 +1,9 @@
+const compareNumbers = (a, b) => {
+  const comparison = (a > b) - (a < b);
+  const result = `${a} is ${comparison > 0 && 'greater than '}
+                 ${comparison < 0 && 'less than '}
+                 ${comparison === 0 && 'equal to '}
+                 ${b}`;
+
+  return result.trim();
+};
